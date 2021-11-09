@@ -2,14 +2,14 @@
 # Certificate will not be valid as it will not be signed by official CA
 
 # Definition of Data for Test Certificate
-family_name = "Doe"
-given_name = "John"
-birthdate = "1911-11-11"  # yyyy-mm-dd
-country = "XX"  # two letter country code
+family_name = "JACQUES"
+given_name = "Mickael"
+birthdate = "1983-09-17"  # yyyy-mm-dd
+country = "FR"  # two letter country code
 last_vaccination_date = "2021-05-01"  # yyyy-mm-dd
 cert_issuer = "Non Valid Test Certificate"
 time_to_live = 180 * 24 * 3600  # validity period of cert, default 180 days
-issuing_country = "XX"  # two letter country code
+issuing_country = "FR"  # two letter country code
 keyid = '01234567'  # first 8 hex values of SHA256 fingerprint of signing certificate, not relevant for test
 # Private Signature Key for ecdsa-with-SHA256 for test certificate without password protection
 # AS THIS IS JUST USED FOR PUBLIC TESTING IT IS NOT CRITICAL TO HAVE THIS PRIVATE KEY IN THIS CODE #
@@ -18,14 +18,14 @@ pem = b'-----BEGIN EC PRIVATE KEY-----\n' \
       b'AwEHoUQDQgAEL8eW9/mJUjRX0G6+dA2M9DHquAx5Q07wHFdZ0vM5WzkbOMNea2X2\n' \
       b'iirLZ+RmhRAuDMZ6SN7Gj5uRrOo89+7KFA==' \
       b'\n-----END EC PRIVATE KEY-----'
-cert_id = "00XX/00000/1234567890/THISISATESTCERTIFICATEXXX#S"
+cert_id = "UVCI:URN:UVCI:01:FR:8GZSYUJSKSZM#A"
 vaccine_manufacturer = "ORG-100030215"
 vaccine_id = "EU/1/20/1528"
 dn = 2
 sd = 2
 tg = "840539006"
 vp = "1119349007"
-version = "1.0.0"
+version = "1.3.0"
 
 # Required imports
 import unidecode
